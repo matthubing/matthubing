@@ -1,0 +1,45 @@
+<% wrap_layout :layout do %>
+
+  <% content_for :headassets do # assets for <head> %>
+  <link rel="stylesheet" href="css/solarized_dark.css">
+  <script src="js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <% end %>
+
+  <article>
+    <h1><%= current_article.title %></h1>
+    <p>
+      <span class="date"><%= current_article.date.strftime('%b %e') %></span>
+      <span class="author">Matt Hubing</span>
+    </p>
+    <%= yield %>
+  </article>
+
+  <%
+  prev_article = current_article.previous_article
+  next_article = current_article.next_article
+  %>
+
+  <% if prev_article %>
+    <p>Previous <a href="<%= prev_article.url %>"><%= prev_article.title %></a></p>
+  <% end %>
+
+  <% if next_article %>
+    <p>Next <a href="<%= next_article.url %>"><%= next_article.title %></a></p>
+  <% end %>
+
+  <% content_for :aside do # stuff in sidebar %>
+  <%= partial "aside" %>
+  <% end %>
+
+  <% content_for :footerassets do # assets before </body> %>
+
+  <script>
+  $(document).ready(function () {
+    $('#wrapper').show().addClass('fadeIn');
+  }); // document.ready
+  </script>
+
+  <% end %>
+
+<% end %>

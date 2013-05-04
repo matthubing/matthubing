@@ -1,0 +1,32 @@
+---
+title: Work
+description: 
+---
+
+<% content_for :headassets do # assets for <head> %>
+<% end %>
+
+<h1>Work</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, pariatur assumenda in quo aut suscipit voluptates non eius voluptatibus saepe. Vero, quibusdam ducimus harum corporis qui inventore obcaecati incidunt illo doloribus.</p>
+
+<hr>
+
+<div class="project">
+  <img class="image" src="http://placehold.it/400x300">
+  <h4 class="title">Project 1</h4>
+  <p class="description">Project 1 description lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur amet aliquam at quidem aliquid suscipit unde debitis eaque delectus maiores.</p>
+</div>
+
+
+<% content_for :aside do # stuff in sidebar %>
+<% end %>
+
+<% content_for :footerassets do # assets before </body> %>
+
+<script>
+$(document).ready(function () {
+  $('#wrapper').show().addClass('fadeIn');
+}); // document.ready
+</script>
+
+<% end %>

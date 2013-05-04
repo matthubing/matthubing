@@ -1,0 +1,34 @@
+---
+title: Contact
+description: 
+---
+
+<% content_for :headassets do # assets for <head> %>
+<% end %>
+
+<h1>Contact</h1>
+<p>hello at matthubing dot com</p>
+<p><%= link_to '@matthubing', 'http://twitter.com/matthubing' %></p>
+<p><%= link_to 'LinkedIn', 'http://www.linkedin.com/in/matthubing' %></p>
+<p><%= link_to 'GitHub', 'https://github.com/matthubing' %></p>
+<p><%= link_to 'Flickr', 'http://www.flickr.com/photos/matthubing/' %></p>
+
+<p><%= link_to 'Battlefield 3 Battlelog: Mattsalot', 'http://battlelog.battlefield.com/bf3/user/matthubing/' %></p>
+<p><%= link_to 'Call of Duty Elite: Mattsalot', 'http://www.callofduty.com/people/Mattsalot' %></p>
+<p><%= link_to 'Halo3: Mattsalot', 'http://www.bungie.net/Stats/Halo3/Default.aspx?player=Mattsalot' %></p>
+
+
+
+
+<% content_for :aside do # stuff in sidebar %>
+<% end %>
+
+<% content_for :footerassets do # assets before </body> %>
+
+<script>
+$(document).ready(function () {
+  $('#wrapper').show().addClass('fadeIn');
+}); // document.ready
+</script>
+
+<% end %>

@@ -1,0 +1,63 @@
+---
+title: UX Designer, Front-End Developer, &amp; Gamer in Grapevine, Texas
+description: 
+---
+
+<% content_for :headassets do # assets for <head> %>
+<% end %>
+
+<h1>UX Designer, Front-End Developer, &amp; Gamer in Grapevine, Texas</h1>
+<p>I improve websites and applications by focusing on the needs of users. I code using techniques of the web standards community. I employ user-centered design methodologies and techniques of the Web Standards community to build high-performance web sites and applications.</p>
+<p>These days I work at Fidelity Investments where I fix broken enterprise apps and make badass apps for the future.</p>
+<p>I live in Grapevine, Texas with my wife and Spanish Water Dog, <%= link_to 'Luna Bear', 'lunabear.html' %>.</p>
+<p>When I&rsquo;m not designing something or writing code you can catch me playing <%= link_to 'gaming', 'gaming.html' %>, grilling in my backyard, or watching Netflix.</p>
+
+<hr>
+
+<h3>Expertise</h3>
+<div class="">
+  <img src="http://placehold.it/400x300">
+  <h4><span>User Experience Design</span></h4>
+  <p>Understanding users&rsquo; mental models, expectations, &amp; external process provides a context for all future design decisions.</p>
+</div>
+<div class="">
+  <img src="http://placehold.it/400x300">
+  <h4><span>Interaction Design</span></h4>
+  <p>Wireframing &amp; prototyping help to solve complex interface design challenges, bringing clarity and flow to the user interface.</p>
+</div>
+<div class="">
+  <img src="http://placehold.it/400x300">
+  <h4><span>Visual Design</span></h4>
+  <p>Gestalt principles, affordance, &amp; a visual hierarchy bring understanding to complex information. Branding provides a consistent message that inspires trust and aids recall.</p>
+</div>
+<div class="">
+  <img src="http://placehold.it/400x300">
+  <h4><span>Front-End Development</span></h4>
+  <p>My development process begins with a careful separation of content, style, and behavior along with semantic markup to deliver maintainable, cross-browser code.</p>
+</div>
+<div class="">
+  <img src="http://placehold.it/400x300">
+  <h4><span>Usability Testing</span></h4>
+  <p>Throughout a project I engage users in formal and informal usability testing to validate my design decisions with actual performance metrics.</p>
+</div>
+
+<hr>
+
+<h3>Articles</h3>
+<% page_articles.each_with_index do |article, i| %>
+  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+<% end %>
+
+<% content_for :aside do # stuff in sidebar %>
+<%= partial "aside" %>
+<% end %>
+
+<% content_for :footerassets do # assets before </body> %>
+
+<script>
+$(document).ready(function () {
+  $('#wrapper').show().addClass('fadeIn');
+}); // document.ready
+</script>
+
+<% end %>

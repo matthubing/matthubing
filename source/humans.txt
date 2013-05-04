@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Matt Hubing -- UX Designer -- @matthubing
+
+# THANKS
+
+    Matt Hubing
+
+# TECHNOLOGY COLOPHON
+
+    HTML5,
+    CSS3
+    jQuery,
+    Modernizr,
+    HTML5 Boilerplate
+    Normalize.css
+    Middleman,
+    YAML,
+    Markdown
