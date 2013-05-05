@@ -10,7 +10,7 @@ description:
 <p>I improve websites and applications by focusing on the needs of users. I code using techniques of the web standards community. I employ user-centered design methodologies and techniques of the Web Standards community to build high-performance web sites and applications.</p>
 <p>These days I work at Fidelity Investments where I fix broken enterprise apps and make badass apps for the future.</p>
 <p>I live in Grapevine, Texas with my wife and Spanish Water Dog, <%= link_to 'Luna Bear', 'lunabear.html' %>.</p>
-<p>When I&rsquo;m not designing something or writing code you can catch me playing <%= link_to 'gaming', 'gaming.html' %>, grilling in my backyard, or watching Netflix.</p>
+<p>When I&rsquo;m not designing something or writing code you can catch me playing <%= link_to 'video games', 'gaming.html' %>, grilling in my backyard, or watching Netflix.</p>
 
 <hr>
 
@@ -49,7 +49,19 @@ description:
 <% end %>
 
 <% content_for :aside do # stuff in sidebar %>
-<%= partial "aside" %>
+<h4>Tags</h4>
+<ul>
+  <% blog.tags.each do |tag, articles| %>
+    <li><%= link_to tag, tag_path(tag) %> <%= articles.size %></a></li>
+  <% end %>
+</ul>
+
+<h4>By Year</h4>
+<ul>
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+    <li><%= link_to year, blog_year_path(year) %> <%= articles.size %></a></li>
+  <% end %>
+</ul>
 <% end %>
 
 <% content_for :footerassets do # assets before </body> %>

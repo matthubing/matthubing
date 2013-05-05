@@ -7,9 +7,17 @@ description:
 <% end %>
 
 <h1>Gaming</h1>
+<p>I play games on my MacBook Pro (via Bootcamp), Xbox 360, Playstation 3, and iPad.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, pariatur assumenda in quo aut suscipit voluptates non eius voluptatibus saepe. Vero, quibusdam ducimus harum corporis qui inventore obcaecati incidunt illo doloribus.</p>
 <p>Non, minima, dolorum, aliquam laboriosam ut magnam neque odio vitae eaque odit eligendi inventore nesciunt illum ea illo perspiciatis at adipisci autem nostrum laudantium doloribus architecto itaque qui pariatur est aliquid optio harum numquam iure voluptatem ex nemo libero consectetur tenetur</p>
 <p>nobis molestiae labore modi quaerat nulla porro eveniet culpa. A, consectetur facilis laboriosam possimus error dolorem reprehenderit corporis pariatur dolores eaque dolor at incidunt fuga labore nostrum. Molestiae?</p>
+
+<h3>Gaming Articles</h3>
+<% blog.articles.each do |article| %>
+  <% if article.tags.include? 'gaming' %>
+    <p><a href="<%= article.url %>"><%= article.title %></a></p>
+  <% end %>
+<% end %>
 
 <% content_for :aside do # stuff in sidebar %>
 <% end %>
