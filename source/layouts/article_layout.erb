@@ -11,6 +11,9 @@
     <p>
       <span class="date"><%= current_article.date.strftime('%b %e') %></span>
       <span class="author">Matt Hubing</span>
+      <% current_article.tags.each do |tag| %>
+        <span class="tag"><%= tag %></span>
+      <% end %>
     </p>
     <%= yield %>
   </article>

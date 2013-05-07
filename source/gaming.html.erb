@@ -12,14 +12,15 @@ description:
 <p>Non, minima, dolorum, aliquam laboriosam ut magnam neque odio vitae eaque odit eligendi inventore nesciunt illum ea illo perspiciatis at adipisci autem nostrum laudantium doloribus architecto itaque qui pariatur est aliquid optio harum numquam iure voluptatem ex nemo libero consectetur tenetur</p>
 <p>nobis molestiae labore modi quaerat nulla porro eveniet culpa. A, consectetur facilis laboriosam possimus error dolorem reprehenderit corporis pariatur dolores eaque dolor at incidunt fuga labore nostrum. Molestiae?</p>
 
-<h3>Gaming Articles</h3>
-<% blog.articles.each do |article| %>
-  <% if article.tags.include? 'gaming' %>
-    <p><a href="<%= article.url %>"><%= article.title %></a></p>
-  <% end %>
-<% end %>
-
 <% content_for :aside do # stuff in sidebar %>
+  <h3>Gaming Articles</h3>
+  <ul>
+  <% blog.articles.each do |article| %>
+    <% if article.tags.include? 'gaming' %>
+      <li><a href="<%= article.url %>"><%= article.title %></a></li>
+    <% end %>
+  <% end %>
+  </ul>
 <% end %>
 
 <% content_for :footerassets do # assets before </body> %>

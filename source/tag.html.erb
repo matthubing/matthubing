@@ -1,16 +1,14 @@
 ---
+title: Articles by Tag
+description: 
 pageable: true
-per_page: 12
+per_page: 10
 ---
-<h1>Articles tagged '<%= tagname %>'</h1>
 
-<% if paginate %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
+<% content_for :headassets do # assets for <head> %>
 <% end %>
+
+<h1>Articles tagged &ldquo;<%= tagname %>&rdquo;</h1>
 
 <ul>
   <% page_articles.each_with_index do |article, i| %>
@@ -19,7 +17,26 @@ per_page: 12
 </ul>
 
 <% if paginate %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+
   <% if next_page %>
     <p><%= link_to 'Next page', next_page %></p>
   <% end %>
+<% end %>
+
+<% content_for :aside do # stuff in sidebar %>
+<% end %>
+
+<% content_for :footerassets do # assets before </body> %>
+
+<script>
+$(document).ready(function () {
+  $('#wrapper').show().addClass('fadeIn');
+}); // document.ready
+</script>
+
 <% end %>
