@@ -1,0 +1,892 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"pos:s	position:static"
+			],
+			[
+				"ma",
+				"maw:n	max-width:none"
+			],
+			[
+				"pro",
+				"project-thumb-control"
+			],
+			[
+				"Pro",
+				"Projects"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"fo",
+				"focus"
+			],
+			[
+				"m",
+				"mt	margin-top"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fl",
+				"fl:r	float:right"
+			],
+			[
+				"bod",
+				"border-radius"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"t-sh",
+				"text-shadow"
+			],
+			[
+				"moz-box-",
+				"moz-box-sizing"
+			],
+			[
+				"article",
+				"current_article"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"artic",
+				"current_article"
+			],
+			[
+				"lin",
+				"link_to"
+			],
+			[
+				"su",
+				"summary"
+			],
+			[
+				"m-l",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"ind",
+				"index"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"exper",
+				"expertises"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"expertise-men",
+				"expertise-menu-items"
+			],
+			[
+				"expe",
+				"expertise-menu"
+			],
+			[
+				"ex",
+				"expertises"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"mi",
+				"min-width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/work.html.erb",
+			"settings":
+			{
+				"buffer_size": 2216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/css/app.sass",
+			"settings":
+			{
+				"buffer_size": 3231,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 309.0,
+		"selected_items":
+		[
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disc",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/matthubing/Sites/matthubing.com/source/index.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/faq.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/matthubing.com.sublime-workspace",
+		"/Users/matthubing/Sites/matthubing.com/matthubing.com.sublime-project",
+		"/Users/matthubing/Sites/wheredoigoto.com/config.rb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/index.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/layout.erb",
+		"/Volumes/HUBING5/wheredoigoto.fmr.com/prototype.html",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/resources.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/contact.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/help.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/tour.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/about.html.erb",
+		"/Users/matthubing/Sites/wheredoigoto.com/source/_footer.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/resources.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/css/app.sass",
+		"/Users/matthubing/Desktop/web components/Starkers/archive.php",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/layout.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/tour.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/about.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/index.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/work.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/tag.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/help.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/feed.xml.builder",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/favicon.ico",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/crossdomain.xml",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/contact.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/calendar.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/blog.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/_footer.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/_aside.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/_header.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/_notice.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/_iewarning.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/source/lunabear.html.erb",
+		"/Users/matthubing/Sites/click2compute.fmr.com/config.rb",
+		"/Users/matthubing/Sites/matthubing.com/source/tag.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/articles.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/gaming.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/lunabear.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/calendar.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/layouts/article_layout.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/_aside.erb",
+		"/Users/matthubing/Sites/matthubing.com/config.rb",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2012-01-04-example-article.html.markdown.erb",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/User/HTML (Rails).sublime-settings",
+		"/Users/matthubing/Sites/matthubing.com/source/layout.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/feed.xml.builder",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2012-03-21-example-article.html.markdown.erb",
+		"/Users/matthubing/Sites/matthubing.com/.gitignore",
+		"/Users/matthubing/Sites/matthubing.com/source/css/app.sass",
+		"/Users/matthubing/Sites/matthubing.com/README.md",
+		"/Users/matthubing/Sites/matthubing.com/LICENSE.md",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2013-05-02-middleman-a-blogging-platform-for-front-end-developers.html.markdown.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2013-05-02-middleman-a-blogging-platform-for-front-end-developers.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2013-03-24-this-is-the-slug.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/articles/2013-05-2-middleman-a-blogging-platform-for-front-end-developers.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/build/contact.html",
+		"/Users/matthubing/Sites/matthubing.com/source/2013-03-24-this-is-the-slug.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/layouts/layout.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-01-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-02-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-03-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-04-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-05-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-06-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-07-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-08-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-09-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-10-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-11-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-01-12-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-03-21-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/contact.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/about.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/resume.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/work.html.erb",
+		"/Users/matthubing/Sites/matthubing.com/Gemfile",
+		"/Users/matthubing/Sites/matthubing.com/source/css/config.rb",
+		"/Users/matthubing/Sites/matthubing.com/source/_header.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/_footer.erb",
+		"/Users/matthubing/Sites/matthubing.com/source/_iewarning.erb",
+		"/Users/matthubing/Sites/matthubing.com/build/404.html",
+		"/Users/matthubing/Sites/matthubing.com/source/humans.txt",
+		"/Users/matthubing/Sites/matthubing.com/source/sass/app.sass",
+		"/Users/matthubing/Sites/matthubing.com/source/sass/config.rb",
+		"/Users/matthubing/Sites/matthubing.com/source/css/sass/app.sass",
+		"/Users/matthubing/Sites/matthubing.com/source/css/sass/config.rb",
+		"/Users/matthubing/Sites/matt-blog-test/Gemfile",
+		"/Users/matthubing/Sites/matthubing.com/source/2012-02-24-example-article.html.markdown",
+		"/Users/matthubing/Sites/matthubing.com/source/<footer>",
+		"/Users/matthubing/Sites/matthubing.com/source/example-article.html.markdown",
+		"/Users/matthubing/Sites/matt-blog-test/config.rb",
+		"/Users/matthubing/Sites/matt-blog-test/.gitignore",
+		"/Users/matthubing/Sites/matt-blog-test/.DS_Store",
+		"/Users/matthubing/Sites/matt-blog-test/Gemfile.lock",
+		"/Users/matthubing/Sites/matt-blog-test/source/layouts/layout.erb",
+		"/Users/matthubing/Sites/matt-blog-test/source/index.html.erb",
+		"/Users/matthubing/Sites/matt-blog-test/.bundle/config",
+		"/Users/matthubing/Sites/matt-blog-test/source/layouts/_iewarning.erb",
+		"/Applications/MAMP/htdocs/v4.hubingdesign.com/index.html",
+		"/Applications/MAMP/htdocs/v4.hubingdesign.com/stylesheets/sass/general.sass",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/User/Sass.sublime-settings",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/matthubing/Library/Application Support/Sublime Text 2/Packages/User/html/html5 doctype.sublime-snippet",
+		"/tmp/subl stdin uFLBK4.txt",
+		"/Users/matthubing/Desktop/projects/sample_app/config/routes.rb",
+		"/Users/matthubing/Desktop/projects/sample_app/public/index.html",
+		"/Users/matthubing/Desktop/projects/sample_app/public/hello.html",
+		"/Users/matthubing/Desktop/projects/sample_app/Gemfile",
+		"/Users/matthubing/Desktop/projects/sample_app/.gitignore",
+		"/Users/matthubing/Desktop/projects/sample_app/README.md",
+		"/Users/matthubing/Desktop/projects/demo_app/app/models/user.rb",
+		"/Users/matthubing/Desktop/projects/demo_app/app/models/micropost.rb",
+		"/Applications/MAMP/htdocs/v4.hubingdesign.com/stylesheets/app.css",
+		"/Users/matthubing/Desktop/pool info.txt",
+		"/Users/matthubing/Desktop/old pc/Documents/SWIMMY",
+		"/Users/matthubing/Desktop/House Hunt/repair-issues.txt",
+		"/Users/matthubing/Desktop/product-page.html",
+		"/Users/matthubing/Desktop/sasstesst/sass/screen.sass",
+		"/Users/matthubing/Desktop/sasstesst/sass/ie.sass",
+		"/Users/matthubing/Desktop/sasstesst/sass/print.sass",
+		"/Users/matthubing/Desktop/quotes.txt",
+		"/Users/matthubing/Desktop/resonance walkthrough.html",
+		"/Users/matthubing/Desktop/Important Stuff.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";",
+			"	",
+			"<h6 class=\"title\"",
+			"<span>",
+			"<div class=\"\">",
+			"’",
+			"a-five-up columns",
+			":",
+			": ",
+			";",
+			"	",
+			"<hr>",
+			"//",
+			"expertise-menu-items",
+			"success eight\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/work.html.erb",
+					"settings":
+					{
+						"buffer_size": 2216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1118,
+								1118
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 777.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "source/css/app.sass",
+					"settings":
+					{
+						"buffer_size": 3231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2741,
+								2741
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3232.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"matthub",
+				"matthubing.com.sublime-workspace"
+			],
+			[
+				"matth",
+				"matthubing.com.sublime-workspace"
+			],
+			[
+				"matt",
+				"matthubing.com.sublime-project"
+			],
+			[
+				"c",
+				"config.rb"
+			],
+			[
+				"new",
+				"source/new.html.erb"
+			],
+			[
+				"res",
+				"source/resources.html.erb"
+			],
+			[
+				"about",
+				"source/about.html.erb"
+			],
+			[
+				"tour",
+				"source/tour.html.erb"
+			],
+			[
+				"lay",
+				"source/layout.erb"
+			],
+			[
+				"confi",
+				"config.rb"
+			],
+			[
+				"cont",
+				"build/contact.html"
+			],
+			[
+				"404",
+				"build/404.html"
+			],
+			[
+				"asi",
+				"source/_aside.erb"
+			],
+			[
+				"hum",
+				"source/humans.txt"
+			],
+			[
+				"footer",
+				"source/_footer.erb"
+			],
+			[
+				"he",
+				"source/_header.erb"
+			],
+			[
+				"foot",
+				"source/_footer.erb"
+			],
+			[
+				"layou",
+				"source/layouts/layout.erb"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"user",
+				"demo_app/app/models/user.rb"
+			],
+			[
+				"micro",
+				"demo_app/app/models/micropost.rb"
+			],
+			[
+				"mi",
+				"demo_app/app/models/micropost.rb"
+			],
+			[
+				"rout",
+				"demo_app/config/routes.rb"
+			],
+			[
+				"app.cs",
+				"v4.hubingdesign.com/stylesheets/app.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true
+}

@@ -9,7 +9,7 @@
   <article>
     <h1><%= current_article.title %></h1>
     <p>
-      <span class="date"><%= current_article.date.strftime('%b %e') %></span>
+      <span class="date"><%= current_article.date.strftime('%b %e, %Y') %></span>
       <span class="author">Matt Hubing</span>
       <% current_article.tags.each do |tag| %>
         <span class="tag"><%= tag %></span>

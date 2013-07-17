@@ -1,22 +1,55 @@
 ---
 title: Work
 description: 
+projects:
+  -
+    name: project_alpha
+    title: Project Alpha
+    photos:
+      -
+        thumb: http://placehold.it/400x300
+        alt: alpha example
+        description: What I did in Alpha
+      -
+        thumb: http://placehold.it/400x300
+        alt: another alpha example
+        description: Here's Alpha again
+    description: This is project Alpha lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo.
+  -
+    name: project_beta
+    title: Project Beta
+    photos:
+      -
+        thumb: http://placehold.it/400x300
+        alt: beta example
+        description: What I did in Beta
+    description: Project Beta is different tempor incididunt ut labore et dolore magna aliqua orem ipsum dolor sit.
 ---
 
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>Work</h1>
+<h1><%= data.page.title %></h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, pariatur assumenda in quo aut suscipit voluptates non eius voluptatibus saepe. Vero, quibusdam ducimus harum corporis qui inventore obcaecati incidunt illo doloribus.</p>
 
 <hr>
 
-<div class="project">
-  <img class="image" src="http://placehold.it/400x300">
-  <h4 class="title">Project 1</h4>
-  <p class="description">Project 1 description lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur amet aliquam at quidem aliquid suscipit unde debitis eaque delectus maiores.</p>
+<% current_page.data.projects.each do |project| %>
+<div class="project" id="<%= project.name %>">
+  <h4 class="title"><%= project.title %></h4>
+  <p class="description"><%= project.description %></p>
+  <div class="figurecontainer">
+    <a class="project-thumb-control right" href="#next">Next</a>
+    <figure>
+      <% project.photos.each do |photo| %>
+        <img class="image" src="<%= photo.thumb %>" alt="<%= photo.alt %>">
+        <figcaption class="caption"><%= photo.description %></figcaption>
+      <% end %>
+    </figure>
+    <a class="project-thumb-control left" href="#prev">Previous</a>
+  </div>
 </div>
-
+<% end %>
 
 <% content_for :aside do # stuff in sidebar %>
 <% end %>
@@ -24,7 +57,27 @@ description:
 <% content_for :footerassets do # assets before </body> %>
 
 <script>
-$(document).ready(function () {
+function init_project_slideshow() {
+  $('.project .image').hide();
+  $('.project .caption').hide();
+  $('.project .image:first-child').show().addClass('fadeIn selected');
+  $('.project .caption:nth-child(2)').show().addClass('fadeIn selected');
+  $('.project .project-thumb-control.left').hide();
+  $('.project .project-thumb-control.right').on({
+    click: function(e) {
+      e.preventDefault();
+      //var i = $(this).indexof.img in figure
+      //i = i + 1;
+
+    }
+  });
+}
+
+$(document).ready(function() {
+
+  var project = $('.project')
+  init_project_slideshow(project);
+
   $('#wrapper').show().addClass('fadeIn');
 }); // document.ready
 </script>

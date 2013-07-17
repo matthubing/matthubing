@@ -16,9 +16,9 @@ a
 html
     margin: 0
     padding: 0
-    background-color: #d0d0d0
+    background-color: #fcfcfc //#d0d0d0
 body
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
     margin: 0
     padding: 0
     -webkit-text-size-adjust: none //disable text-resizing on Safari Mobile
@@ -45,7 +45,7 @@ footer
     margin: 3em auto
     padding: 40px
     background-color: #fcfcfc
-    box-shadow: 0 20px 20px rgba(0,0,0,.05)
+    // box-shadow: 0 20px 20px rgba(0,0,0,.05)
 @media handheld, only screen and (max-width: 990px)
     #wrapper
         width: auto
@@ -133,3 +133,135 @@ footer
     -moz-animation-name: fadeOut
     -o-animation-name: fadeOut
     animation-name: fadeOut
+
+
+
+// General
+h1
+    font-size: 3em
+    font-weight: 300
+input::-moz-placeholder, textarea::-moz-placeholder
+    opacity: 1
+    color: rgba(0,0,0,.3)
+
+.btn
+    display: inline-block
+    padding: .8em
+    border: 1px solid rgba(#000, 0.5)
+    border-radius: 3px
+    text-decoration: none
+    text-align: center
+    font-weight: bold
+    font-size: 1em
+    color: rgba(#404040, 1)
+    background-color: rgba(#c0c0c0, 1)
+    box-shadow: 0 1px 2px #fff inset
+    &:hover
+        color: rgba(#505050, 1)
+        background-color: rgba(#d0d0d0, 1)
+    &:focus
+        color: rgba(#999, 0.4)
+        background-color: rgba(#999, 0.4)
+    &:active
+        color: rgba(#999, 0.4)
+        background-color: rgba(#999, 0.4)
+    &.disabled
+        color: rgba(#999, 0.4)
+        background-color: rgba(#999, 0.4)
+        &:hover, &:focus, &:active
+            cursor: default
+    &.btn-primary
+        &:hover
+        &:focus
+        &:active
+    &.btn-tertiary
+        &:hover
+        &:focus
+        &:active
+    &.btn-small
+        line-height: 1em
+        font-size: .75em
+        padding: .75em
+        //border-radius: 3px
+    &.btn-large
+        line-height: 1em
+        font-size: 1em
+        padding: 1em
+        border-radius: 6px
+
+// header
+header
+    #logo
+    nav
+        a
+    a
+        &:hover, &:focus, &:active
+
+
+// Articles
+.date
+    font-style: italic
+.author
+.tag
+    background-color: #f0f0f0
+    border: 1px solid #e0e0e0
+    border-radius: 3px
+    padding: 0 .5em
+.size
+    font-weight: bold
+    color: #ccc
+.tag-list, .date-list, .article-list
+    list-style: none
+    padding-left: 0
+
+
+// Work
+.project
+    .figurecontainer
+        position: relative
+    .project-thumb-control
+        position: absolute
+        top: 2em
+        display: none
+        padding: .5em 1em
+        &.right
+            right: 0
+        &.left
+            left: 0
+
+.project:hover
+    .project-thumb-control
+        display: block
+        background-color: rgba(255,255,255,.3)
+        &:hover, &:active, &:focus
+            background-color: #f0f
+.project
+    .image
+        max-width: 100%
+    .caption
+        background-color: #e0e0e0
+        padding: 0 .25em
+
+
+// Contact
+#contact-form
+.form-row
+    label
+        display: none
+        float: left
+    input[type='text'], input[type='url'], input[type='email'], textarea
+        background-color: rgba(#f0f0f0, .5)
+        border-radius: 3px
+        border: 1px solid rgba(#808080, 1)
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        padding: 1em
+        width: 100%
+        &:focus
+            background-color: rgba(#f0f0f0, 1)
+    input[type='text']
+    textarea
+        min-height: 200px
+    .error
+        display: block

@@ -6,12 +6,44 @@ description:
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>Luna Bear</h1>
-<p>Luna is a Spanish Water Dog, <i>El Perro de Agua Espa&ntilde;ol</i>, a rare dog breed in the United States. She is a medium-sized working dog with a curly coat, often mistaken for a Labradoodle. The Obamas have a similar breed, a Portugese Water Dog, which is more like a Poodle. Luna&rsquo;s coat is hypo-allergenic and doesn&rsquo;t shed. If left uncut, her coat would grow out into long cords.</p>
-<p>Spanish Water Dogs are very active breeds. Luna enjoys swimming and retrieving with enless excitement. I&rsquo;ve seen her pointing on occasion, and she has a strong herding instinct.</p>
+<div class="grid-container">
+  <div class="grid-100">
+  	<h1><%= data.page.title %></h1>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-75 mobile-grid-100">
+  	<p>Luna is a Spanish Water Dog, <i>El Perro de Agua Espa&ntilde;ol</i>, a rare dog breed in the United States. She is a medium-sized working dog with a curly coat, often mistaken for a Labradoodle. The Obamas have a similar breed, a Portugese Water Dog, which is more like a Poodle. Luna&rsquo;s coat is hypo-allergenic and doesn&rsquo;t shed. If left uncut, her coat would grow out into long cords.</p>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-100">
+	<img src="/img/luna-outside.jpg" alt="Luna hunting for squirrels in the backyard">
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-75 mobile-grid-100">
+    <p>Spanish Water Dogs are very active breeds. Luna enjoys swimming and retrieving with enless excitement. I&rsquo;ve seen her pointing on occasion, and she has a strong herding instinct.</p>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-100">
 
 <% content_for :aside do # stuff in sidebar %>
+  <h3>Articles about Luna</h3>
+  <% blog.articles.each do |article| %>
+    <% if article.tags.include? 'Luna' %>
+      <h4><a href="<%= article.url %>"><%= article.title %></a> <span class=""><%= article.date.strftime('%b %e') %></span></h4>
+    <% end %>
+  <% end %>
 <% end %>
+
+  </div>
+</div>
 
 <% content_for :footerassets do # assets before </body> %>
 

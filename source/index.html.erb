@@ -1,12 +1,12 @@
 ---
-title: UX Designer, Front-End Developer, &amp; Gamer in Grapevine, Texas
+title: UX Designer, Developer, &amp; Gamer in Grapevine, Texas
 description: 
 ---
 
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>UX Designer, Front-End Developer, &amp; Gamer in Grapevine, Texas</h1>
+<h1><%= data.page.title %></h1>
 <p>I improve websites and applications by focusing on the needs of users. I code using techniques of the web standards community. I employ user-centered design methodologies and techniques of the Web Standards community to build high-performance web sites and applications.</p>
 <p>These days I work at Fidelity Investments where I fix broken enterprise apps and make badass apps for the future.</p>
 <p>I live in Grapevine, Texas with my wife and Spanish Water Dog, <%= link_to 'Luna Bear', 'lunabear.html' %>.</p>
@@ -15,30 +15,32 @@ description:
 <hr>
 
 <h3>Expertise</h3>
-<div class="">
-  <img src="http://placehold.it/400x300">
-  <h4><span>User Experience Design</span></h4>
-  <p>Understanding users&rsquo; mental models, expectations, &amp; external process provides a context for all future design decisions.</p>
-</div>
-<div class="">
-  <img src="http://placehold.it/400x300">
-  <h4><span>Interaction Design</span></h4>
-  <p>Wireframing &amp; prototyping help to solve complex interface design challenges, bringing clarity and flow to the user interface.</p>
-</div>
-<div class="">
-  <img src="http://placehold.it/400x300">
-  <h4><span>Visual Design</span></h4>
-  <p>Gestalt principles, affordance, &amp; a visual hierarchy bring understanding to complex information. Branding provides a consistent message that inspires trust and aids recall.</p>
-</div>
-<div class="">
-  <img src="http://placehold.it/400x300">
-  <h4><span>Front-End Development</span></h4>
-  <p>My development process begins with a careful separation of content, style, and behavior along with semantic markup to deliver maintainable, cross-browser code.</p>
-</div>
-<div class="">
-  <img src="http://placehold.it/400x300">
-  <h4><span>Usability Testing</span></h4>
-  <p>Throughout a project I engage users in formal and informal usability testing to validate my design decisions with actual performance metrics.</p>
+<div class="grid-container">
+  <div class="grid-50">
+    <img src="http://placehold.it/400x300">
+    <h4><span>User Experience Design</span></h4>
+    <p>Understanding users&rsquo; mental models, expectations, &amp; external process provides a context for all future design decisions.</p>
+  </div>
+  <div class="grid-50">
+    <img src="http://placehold.it/400x300">
+    <h4><span>Interaction Design</span></h4>
+    <p>Wireframing &amp; prototyping help to solve complex interface design challenges, bringing clarity and flow to the user interface.</p>
+  </div>
+  <div class="grid-50">
+    <img src="http://placehold.it/400x300">
+    <h4><span>Visual Design</span></h4>
+    <p>Gestalt principles, affordance, &amp; a visual hierarchy bring understanding to complex information. Branding provides a consistent message that inspires trust and aids recall.</p>
+  </div>
+  <div class="grid-50">
+    <img src="http://placehold.it/400x300">
+    <h4><span>Front-End Development</span></h4>
+    <p>My development process begins with a careful separation of content, style, and behavior along with semantic markup to deliver maintainable, cross-browser code.</p>
+  </div>
+  <div class="grid-50">
+    <img src="http://placehold.it/400x300">
+    <h4><span>Usability Testing</span></h4>
+    <p>Throughout a project I engage users in formal and informal usability testing to validate my design decisions with actual performance metrics.</p>
+  </div>
 </div>
 
 <hr>
@@ -50,16 +52,16 @@ description:
 
 <% content_for :aside do # stuff in sidebar %>
 <h4>Tags</h4>
-<ul>
+<ul class="tag-list">
   <% blog.tags.each do |tag, articles| %>
-    <li><%= link_to tag, tag_path(tag) %> <%= articles.size %></a></li>
+    <li><%= link_to tag, tag_path(tag), class: "tag" %> <span class="size"><%= articles.size %></span></a></li>
   <% end %>
 </ul>
 
 <h4>By Year</h4>
-<ul>
+<ul class="date-list">
   <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-    <li><%= link_to year, blog_year_path(year) %> <%= articles.size %></a></li>
+    <li><%= link_to year, blog_year_path(year), class: "date" %> <span class="size"><%= articles.size %></span></a></li>
   <% end %>
 </ul>
 <% end %>

@@ -6,18 +6,47 @@ description:
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>Contact</h1>
-<p>hello at matthubing dot com</p>
-<p><%= link_to '@matthubing', 'http://twitter.com/matthubing' %></p>
-<p><%= link_to 'LinkedIn', 'http://www.linkedin.com/in/matthubing' %></p>
-<p><%= link_to 'GitHub', 'https://github.com/matthubing' %></p>
-<p><%= link_to 'Flickr', 'http://www.flickr.com/photos/matthubing/' %></p>
-
-<p><%= link_to 'Battlefield 3 Battlelog: Mattsalot', 'http://battlelog.battlefield.com/bf3/user/matthubing/' %></p>
-<p><%= link_to 'Call of Duty Elite: Mattsalot', 'http://www.callofduty.com/people/Mattsalot' %></p>
-<p><%= link_to 'Halo3: Mattsalot', 'http://www.bungie.net/Stats/Halo3/Default.aspx?player=Mattsalot' %></p>
-
-
+<h1><%= data.page.title %></h1>
+<div class="grid-container">
+  <div class="grid-66">
+    <form action="#" id="contact-form">
+      <p class="form-row">
+        <label for="name">name</label>
+        <input id="name" type="text" placeholder="your name">
+        <span class="error"></span>
+      </p>
+      <p class="form-row">
+        <label for="email">email</label>
+        <input id="email" type="email" placeholder="you@domain.com">
+        <span class="error"></span>
+      </p>
+      <p class="form-row">
+        <label for="url">url</label>
+        <input id="url" type="url" placeholder="http://yoursite.com">
+        <span class="error"></span>
+      </p>
+      <p class="form-row">
+        <label for="message">message</label>
+        <textarea id="message" placeholder="your message"></textarea>
+        <span class="error"></span>
+      </p>
+      <p class="form-row">
+        <button class="btn btn-primary" id="send-message">send <i class="icon-arrow-right"></i></button>
+        <span class="error"></span>
+      </p>
+    </form>
+  </div>
+  <div class="grid-33">
+    <p><i class="icon-mail-forward"></i> hello at matthubing dot com</p>
+    <p><i class="icon-twitter"></i> <%= link_to '@matthubing', 'http://twitter.com/matthubing' %></p>
+    <p><i class="icon-linkedin"></i> <%= link_to 'LinkedIn', 'http://www.linkedin.com/in/matthubing' %></p>
+    <p><i class="icon-github"></i> <%= link_to 'GitHub', 'https://github.com/matthubing' %></p>
+    <p><i class="icon-picture"></i> <%= link_to 'Flickr', 'http://www.flickr.com/photos/matthubing/' %></p>
+    <p><i class="icon-gamepad"></i> <%= link_to 'Battlefield 3 Battlelog: Mattsalot', 'http://battlelog.battlefield.com/bf3/user/matthubing/' %></p>
+    <p><i class="icon-gamepad"></i> <%= link_to 'Call of Duty Elite: Mattsalot', 'http://www.callofduty.com/people/Mattsalot' %></p>
+    <p><i class="icon-gamepad"></i> <%= link_to 'Halo3: Mattsalot', 'http://www.bungie.net/Stats/Halo3/Default.aspx?player=Mattsalot' %></p>
+  </div>
+</div>
 
 
 <% content_for :aside do # stuff in sidebar %>
@@ -26,8 +55,95 @@ description:
 <% content_for :footerassets do # assets before </body> %>
 
 <script>
+
+var ContactForm = {
+
+  init: function(){
+
+    this.nameField = $("#name");
+    this.emailField = $("#email");
+    this.urlField = $("#url");
+    this.messageField = $("#message");
+    this.sendMessageButton = $("#send-message");
+
+    this.clearAllErrors("#contact-form");
+
+    this.sendMessageButton.on('click', function(e){
+      if (ContactForm.fieldsAreValid() == true){
+        ContactForm.sendMessage();
+      }
+      e.preventDefault();
+    });
+  },
+
+  fieldsAreValid: function(){
+    var isValid
+
+    this.clearAllErrors("#contact-form");
+
+    // tests here
+    if (this.nameField.val() == ""){
+      isValid = false;
+      this.showError(this.nameField,"Please enter your name.");
+    }
+    if (this.emailField.val() == ""){
+      isValid = false;
+      this.showError(this.emailField,"Please enter your email address.");
+    }
+    if (this.urlField.val() == ""){
+      isValid = false;
+      this.showError(this.urlField,"Please enter your URL.");
+    }
+    if (this.messageField.val() == ""){
+      isValid = false;
+      this.showError(this.messageField,"Please enter a message.");
+    }
+
+    if (isValid == false){
+      this.showError(this.sendMessageButton,"Errors found.");
+      return false;
+    } else {
+      return true;
+    }
+  },
+
+  sendMessage: function(){
+    var data = {
+      'name': ContactForm.nameField.val(),
+      'email': ContactForm.emailField.val(),
+      'url': ContactForm.urlField.val(),
+      'message': ContactForm.messageField.val()
+    };
+    console.log("sending: " + data.name + ", " + data.email + ", " + data.url + ", " + data.message);
+
+
+  //   $.ajax(function(){
+  //     url: "",
+  //     data: {
+  //       'name': ContactForm.nameField,
+  //       'email': ContactForm.nameField,
+  //       'url': ContactForm.urlField,
+  //       'message': ContactForm.messageField
+  //     },
+  //   });
+  },
+
+  clearError: function(object){
+    object.next(".error").hide().html("");
+  },
+
+  clearAllErrors: function(object){
+    $(object + " .error").hide().html("");
+  },
+
+  showError: function(object,msg){
+    object.next(".error").show().html(msg);
+  }
+}
+
 $(document).ready(function () {
   $('#wrapper').show().addClass('fadeIn');
+  ContactForm.init();
 }); // document.ready
 </script>
 

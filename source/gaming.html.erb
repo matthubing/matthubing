@@ -6,21 +6,60 @@ description:
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>Gaming</h1>
-<p>I play games on my MacBook Pro (via Bootcamp), Xbox 360, Playstation 3, and iPad.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, pariatur assumenda in quo aut suscipit voluptates non eius voluptatibus saepe. Vero, quibusdam ducimus harum corporis qui inventore obcaecati incidunt illo doloribus.</p>
-<p>Non, minima, dolorum, aliquam laboriosam ut magnam neque odio vitae eaque odit eligendi inventore nesciunt illum ea illo perspiciatis at adipisci autem nostrum laudantium doloribus architecto itaque qui pariatur est aliquid optio harum numquam iure voluptatem ex nemo libero consectetur tenetur</p>
-<p>nobis molestiae labore modi quaerat nulla porro eveniet culpa. A, consectetur facilis laboriosam possimus error dolorem reprehenderit corporis pariatur dolores eaque dolor at incidunt fuga labore nostrum. Molestiae?</p>
+<h1><%= data.page.title %></h1>
+<p>Currently, my gaming takes place on my MacBook Pro (via Bootcamp), Xbox 360, Playstation 3, and iOS.</p>
+<!-- <p>On the other spectrum of realism, I enjoy playing the <i>Call of Duty series</i>. I like the fast pace of hardcore team deathmatch on Xbox Live with my friends. The series has an addicting gamification layer of unlocks, achievements, badges, and customizations that keep me engaged.</p> -->
+<p>Here are some of my favorites:</p>
+<ol>
+  <li>
+    <h4>Half-Life</h4>
+    <p>Half-Life changed FPS gaming on the PC with inventive storytelling, weapons, and characters. Then Valve released the Half-Life <abbr title="Software Development Kit">SDK</abbr> which led to the development of Counter-Strike. Only Half-Life 2 with its awesome Source engine can beat this gem.</p>
+  </li>
+  <li>
+    <h4>Halo 3</h4>
+    <p>Bungie took their epic FPS title to the next level on the 360. Multiplayer action is fast and fluid with the &ldquo;Golden Triangle&rdquo; (guns, grenades, and melee). Releasing the analytics software along with the game helped players track history and status. I took off a day of work to play this game the day it was released.</p>
+  </li>
+  <li>
+    <h4>Goldeneye</h4>
+    <p>This game changed everything. Goldeneye had excellent single player campaign with high replayability. For most gamers at the time, this was their first experience playing deathmatch in a FPS. It&rsquo;s worth keeping a N64 around in case you get a craving for remote mines or throwing knives. House rule: you may not select Oddjob.</p>
+  </li>
+  <li>
+    <h4>The Curse of Monkey Island</h4>
+    <p>This is my favorite of the LucasArts adventure games. I like the art style, the puzzles, and the humor. I&rsquo;m not a fan of the newer 3D adventure games, with the exception of Grim Fandango.</p>
+  </li>
+  <li>
+    <h4>Operation Flashpoint</h4>
+    <p>I&rsquo;m a huge fan of <i>ArmA</i> series, which I have played since <i>Operation Flashpoint</i>. With 200,000km<sup>2</sup> maps, 1000m engagement ranges, and an unforgiving damage system, this series makes other military FPS games look childish. To this day I&rsquo;m still amazed at the detail and realism of this military simulation.</p>
+  </li>
+  <li>
+    <h4>Fallout 3</h4>
+    <p>When I heard Bethesda got the rights to this game I was really excited. This game combines the open world FPS RPG engine from Oblivion with the environment and storyline of Fallout.</p>
+  </li>
+  <li>
+    <h4>The Eldar Scrolls: Skyrim</h4>
+    <p>I&rsquo;ve been playing the Eldar Scrolls series since Morrowind. Bethesda has done an excellent job with the series.</p>
+  </li>
+  <li>
+    <h4>Deus Ex</h4>
+    <p>Deus Ex had a great story and character customization options. Objectives could be accomplished by stealth, hacking, persuasion, and violence.</p>
+  </li>
+  <li>
+    <h4>Starcraft</h4>
+    <p>I don&rsquo;t play RTS games anymore, but this one was the best. Great campaign, fantastic multiplayer, and a mission editor! The cutscenes were really funny too.</p>
+  </li>
+  <li>
+    <h4>Tie Fighter</h4>
+    <p>Flight sims used to be way more popular. If you&rsquo;e a fan of Star Wars spacecraft, this is the game to play.</p>
+  </li>
+</ol>
 
 <% content_for :aside do # stuff in sidebar %>
   <h3>Gaming Articles</h3>
-  <ul>
   <% blog.articles.each do |article| %>
     <% if article.tags.include? 'gaming' %>
-      <li><a href="<%= article.url %>"><%= article.title %></a></li>
+      <h4><a href="<%= article.url %>"><%= article.title %></a> <span class=""><%= article.date.strftime('%b %e') %></span></h4>
     <% end %>
   <% end %>
-  </ul>
 <% end %>
 
 <% content_for :footerassets do # assets before </body> %>

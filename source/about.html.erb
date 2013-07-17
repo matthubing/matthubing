@@ -6,10 +6,62 @@ description:
 <% content_for :headassets do # assets for <head> %>
 <% end %>
 
-<h1>About</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, pariatur assumenda in quo aut suscipit voluptates non eius voluptatibus saepe. Vero, quibusdam ducimus harum corporis qui inventore obcaecati incidunt illo doloribus.</p>
-<p>Non, minima, dolorum, aliquam laboriosam ut magnam neque odio vitae eaque odit eligendi inventore nesciunt illum ea illo perspiciatis at adipisci autem nostrum laudantium doloribus architecto itaque qui pariatur est aliquid optio harum numquam iure voluptatem ex nemo libero consectetur tenetur</p>
-<p>nobis molestiae labore modi quaerat nulla porro eveniet culpa. A, consectetur facilis laboriosam possimus error dolorem reprehenderit corporis pariatur dolores eaque dolor at incidunt fuga labore nostrum. Molestiae?</p>
+<h1><%= data.page.title %></h1>
+<p>
+  <img src="http://twitter.com/api/users/profile_image/matthubing?size=original" alt="Matt Hubing" style="float:left;margin:0 2em 2em 0">
+  <a rel="me" href="http://matthubing.com" class="fn url">Matt Hubing</a>
+  <small class="pronounciation">(hue · bing)</small>
+  is a UX designer working at
+  <a href="http://fidelity.com/">Fidelity Investments</a>
+  in
+  <span class="adr">
+    <span class="city">Grapevine</span>,
+    <span class="state">Texas</span>
+  </span>. He enjoys writing code (<a class="html" href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a class="css" href="https://en.wikipedia.org/wiki/CSS">CSS</a>, <a class="js" href="https://en.wikipedia.org/wiki/Javascript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>) that powers beautiful applications.
+</p>
+<p>He describes himself as a <a href="https://en.wikipedia.org/wiki/Sandwich">sandwich</a> connoisseur, a <a href="https://en.wikipedia.org/wiki/Spanish_Water_Dog">Spanish Water Dog</a> owner, a <a href="https://en.wikipedia.org/wiki/French_House">electronic music</a> lover, a <a href="http://en.wikipedia.org/wiki/Sublime_Text">Sublime Text</a> user, a <a href="https://en.wikipedia.org/wiki/Lost_(TV_series)">LOST</a> fan and a <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a> addict.</p>
+<p>He probably is what modern society would refer to as &ldquo;<em>geek</em>&rdquo;, although he hates computer games, except for <a href="http://www.dosgamesarchive.com/download/aquanoid/">Aquanoid</a> and <a href="https://en.wikipedia.org/wiki/Minecraft">Minecraft</a>.</p>
+<p>He shrinks his thoughts into 140 characters on <a href="https://twitter.com/matthubing">Twitter</a>, shares some code he writes on <a href="https://github.com/matthubing">GitHub</a>, networks on <a href="https://linkedin.com/in/matthubing">LinkedIn</a>, and posts photos on <a href="http://www.flickr.com/photos/matthubing/">Flickr</a>. He can be reached at <code>hello</code>, the usual symbol and then <code>matthubing.com</code>.</p>
+<p>Also, <em>[<a href="https://en.wikipedia.org/wiki/Dwight_Schrute">some</a> <a href="https://en.wikipedia.org/wiki/John_Michael_%22J.D.%22_Dorian">television</a> <a href="https://en.wikipedia.org/wiki/George_Costanza">reference</a>]</em>.</p>
+
+<a class="btn" href="#">A button</a>
+<a class="btn btn-primary" href="#">A button</a>
+<a class="btn btn-tertiary" href="#">A button</a>
+<a class="btn disabled" href="#">A button</a>
+<a class="btn btn-small" href="#">A button</a>
+<a class="btn btn-small btn-primary" href="#">A button</a>
+<a class="btn btn-small btn-tertiary" href="#">A button</a>
+<a class="btn btn-small disabled" href="#">A button</a>
+<a class="btn btn-large" href="#">A button</a>
+<a class="btn btn-large btn-primary" href="#">A button</a>
+<a class="btn btn-large btn-tertiary" href="#">A button</a>
+<a class="btn btn-large disabled" href="#">A button</a>
+
+<button class="btn" href="#">A button</button>
+<button class="btn btn-primary" href="#">A button</button>
+<button class="btn btn-tertiary" href="#">A button</button>
+<button class="btn disabled" href="#">A button</button>
+<button class="btn btn-small" href="#">A button</button>
+<button class="btn btn-small btn-primary" href="#">A button</button>
+<button class="btn btn-small btn-tertiary" href="#">A button</button>
+<button class="btn btn-small disabled" href="#">A button</button>
+<button class="btn btn-large" href="#">A button</button>
+<button class="btn btn-large btn-primary" href="#">A button</button>
+<button class="btn btn-large btn-tertiary" href="#">A button</button>
+<button class="btn btn-large disabled" href="#">A button</button>
+
+<input type="submit" class="btn" value="A button">
+<input type="submit" class="btn btn-primary" value="A button">
+<input type="submit" class="btn btn-tertiary" value="A button">
+<input type="submit" class="btn disabled" value="A button">
+<input type="submit" class="btn btn-small" value="A button">
+<input type="submit" class="btn btn-small btn-primary" value="A button">
+<input type="submit" class="btn btn-small btn-tertiary" value="A button">
+<input type="submit" class="btn btn-small disabled" value="A button">
+<input type="submit" class="btn btn-large" value="A button">
+<input type="submit" class="btn btn-large btn-primary" value="A button">
+<input type="submit" class="btn btn-large btn-tertiary" value="A button">
+<input type="submit" class="btn btn-large disabled" value="A button">
 
 <% content_for :aside do # stuff in sidebar %>
 <% end %>
